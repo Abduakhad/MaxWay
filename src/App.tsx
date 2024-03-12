@@ -1,23 +1,17 @@
-// import axios from 'axios'
-// import apiClient from './service/api.client'
-import { Button } from "@radix-ui/themes";
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Auhenticate from './features/Auhenticate'
 
 const App = () => {
-  // apiClient.post('/singup', {
-  //   headers:{},
-  //   body: JSON.stringify({}),
-  // })
-  // // console.log(axios);
-  //  axios
-  //  .get('https://jsonplaceholder.typcode.com/users')
-  //  .then(res => console.log(res.data))
-  //  .catch(err => console.error(err.message))
+	return (
+		<>
+			<Header />
+			<Auhenticate />
+			<Footer />
+		</>
+	)
+}
 
-  return (
-    <div>
-      <Button>Button</Button>
-    </div>
-  );
-};
+export default App
 
-export default App;
+
